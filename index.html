@@ -58,9 +58,51 @@
                 Наш менеджер свяжется с Вами <br>
                 в течение 15 минут
               </p>
-              <p class="phone"><img src="./img/logos/small/tel.png" alt=""></p>
+              <p class="phone"><strong>8 800 511 51 91</strong></p>
               <p class="sorry"> Если менеджер не перезвонил, сообщите по номеру</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade option-modal" id="optionModal" aria-labelledby="optionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="option-modal__header">
+            <img src="img/logos/small/logo.png" alt="Logo">
+            <h1 class="option-modal__title" id="optionModalTitle"></h1>
+          </div>
+          <div class="option-modal__body">
+            <p class="option-modal__description" id="optionModalDesc">
+
+            </p>
+            <p class="option-modal__price"><span id="optionModalPrice"></span> -.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade option-modal" id="anotherCityModal" aria-labelledby="optionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="option-modal__header">
+            <img src="img/logos/small/logo.png" alt="Logo">
+            <h1 class="option-modal__title"></h1>
+          </div>
+          <div class="option-modal__body another-city">
+            <p>
+              Для расчета стоимости в вашем регионе обратитесь к менеджеру
+            </p>
+            <a href="tel:88005115191"><strong>8 800 511 51 91</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+          	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <img src="" class="imagepreview" style="width: 100%;" >
           </div>
         </div>
       </div>
@@ -103,9 +145,6 @@
                 <span class="navigation__city_left">город . . .</span>
                 <span class="navigation__city_right"> Киров</span>
                 <ul class="city__dropdown">
-                  <li class="city__item">Киров</li>
-                  <li class="city__item">Москва</li>
-                  <li class="city__item">Санкт-Петербург</li>
                 </ul>
               </div>
             </div>
@@ -187,76 +226,76 @@
               <div class="gallery__radio checkbox col-3">
                 <input id="usa" name="design-type" type="radio" class="checkbox__input" checked>
                 <i class="fas fa-check check"></i>
-                <label for="usa" class="checkbox__label">Американский</label>
+                <label for="usa" class="checkbox__label gallery__switcher">Американский</label>
               </div>
               <div class="gallery__radio checkbox col-3">
                 <input id="scan" name="design-type" type="radio" class="checkbox__input">
                 <i class="fas fa-check check"></i>
-                <label for="scan" class="checkbox__label">Скандинавский</label>
+                <label for="scan" class="checkbox__label gallery__switcher">Скандинавский</label>
               </div>
               <div class="gallery__radio checkbox col-3">
                 <input id="village" name="design-type" type="radio" class="checkbox__input">
                 <i class="fas fa-check check"></i>
-                <label for="village" class="checkbox__label">Загородный</label>
+                <label for="village" class="checkbox__label gallery__switcher">Загородный</label>
               </div>
             </div>
-            <div class="gallery__slider">
-              <div>
+            <div class="gallery__slider gallery__slider_active" id="gallery_usa">
+              <div class="pop">
                 <img src="./img/pictures/interior/american/1.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/american/2.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/american/3.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/american/4.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/american/5.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/american/6.jpg" alt="Интерьер">
               </div>
             </div>
-            <div class="gallery__slider">
-              <div>
+            <div class="gallery__slider" id="gallery_scan">
+              <div class="pop">
                 <img src="./img/pictures/interior/country/1.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/country/2.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/country/3.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/country/4.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/country/5.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/country/6.jpg" alt="Интерьер">
               </div>
             </div>
-            <div class="gallery__slider">
-              <div>
+            <div class="gallery__slider" id="gallery_village">
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/1.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/2.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/3.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/4.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/5.jpg" alt="Интерьер">
               </div>
-              <div>
+              <div class="pop">
                 <img src="./img/pictures/interior/scandinavian/6.jpg" alt="Интерьер">
               </div>
             </div>
@@ -313,8 +352,25 @@
           <h2 class="about__title title title_grey">
             Планировка
           </h2>
-          <div class="container">
-            <img src="img/pictures/homelekom_plan.png" alt="Планировка">
+          <div class="layout__img container">
+            <div class="layout__scheme">
+              <img src="img/pictures/homelekom_plan1.png" alt="Планировка 1 этаж" >
+            </div>
+            <div class="layout__scheme">
+              <img src="img/pictures/homelekom_plan2.png" alt="Планировка 2 этаж" >
+            </div>
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                	  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview" style="width: 100%;" >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </section>
 
@@ -348,6 +404,9 @@
               </div>
               <div class="colors__home col-8">
                 <div><img src="./img/pictures/colors/homelekom_red.png" alt="Сайдинг"></div>
+                <div><img src="./img/pictures/colors/homelekom_green.png" alt="Сайдинг"></div>
+                <div><img src="./img/pictures/colors/homelekom_blue.png" alt="Сайдинг"></div>
+                <div><img src="./img/pictures/colors/homelekom_white.png" alt="Сайдинг"></div>
               </div>
 
             </div>
@@ -591,74 +650,104 @@
                 <div class="container option__wrapper">
                   <div class="row">
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-1" class="checkbox__input" name="" value="495000">
+                      <input type="checkbox" id="checkbox-1" class="checkbox__input" name="Пруд для купания" value="495000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-1" class="checkbox__label">Пруд для купания</label>
+                      <label for="checkbox-1" class="checkbox__label options-label">Пруд для купания</label>
+                      <p class="option__description">Выполнен из высокопрочной мембраны HDPE. Оснащен мощной системой фильтрации, что позволяет воде оставаться кристально чистой. Имеет плавный заход (спуск) одной стороны. Размеры: 20 *10 метров, максимальная глубина 1,6 метров, 200 кв м по водной глади.</p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-2" class="checkbox__input" name="" value="460000">
+                      <input type="checkbox" id="checkbox-2" class="checkbox__input" name="Патио с навесом" value="460000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-2" class="checkbox__label">Патио с навесом</label>
+                      <label for="checkbox-2" class="checkbox__label options-label">Патио с навесом</label>
+                      <p class="option__description">
+                        Комфортная зона для отдыха и общения на открытом воздухе. Площадка на фундаменте обрамлена ограждением, имеет дощатый пол, навес - маркиза. Оснащена уличной мебелью. Размеры: Площадь - 30 м2.
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-3" class="checkbox__input" name="" value="70000">
+                      <input type="checkbox" id="checkbox-3" class="checkbox__input" name="Велопарковка" value="70000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-3" class="checkbox__label">Велопарковка</label>
+                      <label for="checkbox-3" class="checkbox__label options-label">Велопарковка</label>
+                      <p class="option__description">
+                        Закрытая утепленная вело-парковка на два велосипеда с обогревом. Она позволяет сохранить полезное пространство в доме, а так же избежать загрязнений дома и защитить велосипеды от холода и осадков.
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-4" class="checkbox__input" name="" value="50000">
+                      <input type="checkbox" id="checkbox-4" class="checkbox__input" name="Детская площадка" value="50000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-4" class="checkbox__label">Детская площадка</label>
+                      <label for="checkbox-4" class="checkbox__label options-label">Детская площадка</label>
+                      <p class="option__description">
+                        Детский комплекс для игр на свежем воздухе, круглогодичного использования. Комплектация: игровая башня, пластиковая горка, качели, кольца, песочница, шведская стенка, канат, сетка-лазалка. Выполнен из шлифованной сосны.
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-5" class="checkbox__input" name="" value="540000">
+                      <input type="checkbox" id="checkbox-5" class="checkbox__input" name="Спортивная площадка" value="540000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-5" class="checkbox__label">Спортивная площадка</label>
+                      <label for="checkbox-5" class="checkbox__label options-label">Спортивная площадка</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-6" class="checkbox__input" name="" value="370000">
+                      <input type="checkbox" id="checkbox-6" class="checkbox__input" name="Открытая SPA зона" value="370000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-6" class="checkbox__label">Открытая SPA зона</label>
+                      <label for="checkbox-6" class="checkbox__label options-label">Открытая SPA зона</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-7" class="checkbox__input" name="" value="100000">
+                      <input type="checkbox" id="checkbox-7" class="checkbox__input" name="Автоматические ворота" value="100000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-7" class="checkbox__label">Автоматические ворота</label>
+                      <label for="checkbox-7" class="checkbox__label options-label">Автоматические ворота</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-8" class="checkbox__input" name="" value="740000">
+                      <input type="checkbox" id="checkbox-8" class="checkbox__input" name="Забор с освещением" value="740000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-8" class="checkbox__label">Забор с освещением</label>
+                      <label for="checkbox-8" class="checkbox__label options-label">Забор с освещением</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-9" class="checkbox__input" name="" value="1620000">
+                      <input type="checkbox" id="checkbox-9" class="checkbox__input" name="Гараж на 2 автомобиля" value="1620000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-9" class="checkbox__label">Гараж на 2 автомобиля</label>
+                      <label for="checkbox-9" class="checkbox__label options-label">Гараж на 2 автомобиля</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-10" class="checkbox__input" name="" value="35000">
+                      <input type="checkbox" id="checkbox-10" class="checkbox__input" name="Зона ухода за питомцем" value="35000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-10" class="checkbox__label">Зона ухода за питомцем</label>
+                      <label for="checkbox-10" class="checkbox__label options-label">Зона ухода за питомцем</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-11" class="checkbox__input" name="" value="110000">
+                      <input type="checkbox" id="checkbox-11" class="checkbox__input" name="Вальер для питомца" value="110000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-11" class="checkbox__label">Вальер для питомца</label>
+                      <label for="checkbox-11" class="checkbox__label options-label">Вальер для питомца</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-12" class="checkbox__input" name="" value="1900000">
+                      <input type="checkbox" id="checkbox-12" class="checkbox__input" name="Ландшафт" value="1900000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-12" class="checkbox__label">Ландшафт</label>
+                      <label for="checkbox-12" class="checkbox__label options-label">Ландшафт</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-13" class="checkbox__input" name="" value="250000">
+                      <input type="checkbox" id="checkbox-13" class="checkbox__input" name="Котельная" value="250000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-13" class="checkbox__label">Котельная</label>
+                      <label for="checkbox-13" class="checkbox__label options-label">Котельная</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-14" class="checkbox__input" name="" value="20000">
+                      <input type="checkbox" id="checkbox-14" class="checkbox__input" name="Пандус" value="20000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-14" class="checkbox__label">Пандус</label>
+                      <label for="checkbox-14" class="checkbox__label options-label">Пандус</label>
+                      <p class="option__description">
+                      </p>
                     </div>
                   </div>
                 </div>

@@ -8408,9 +8408,68 @@ ul {
   width: 100%;
 }
 
+#confirmModal .modal__info .phone {
+  color: #b7c6d7;
+  font-family: Avenir;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+}
+
 #confirmModal .modal__info .sorry {
   font-size: 15px;
   color: #c9c7c7;
+}
+
+.option-modal__header {
+  position: relative;
+  height: 60px;
+  background: #b7c6d7;
+  font-family: Muller;
+}
+
+.option-modal__header img {
+  position: absolute;
+  width: 35px;
+  left: 45px;
+  top: 12px;
+}
+
+.option-modal__title {
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  font-family: Muller;
+}
+
+.option-modal__body {
+  padding: 20px 50px;
+  font-family: Muller;
+}
+
+.option-modal__body.another-city {
+  background: #b7c6d7;
+  color: #fff;
+}
+
+.option-modal__body.another-city a {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.option-modal__description {
+  color: #757575;
+  opacity: 0.8;
+}
+
+.option-modal__price {
+  margin-top: 10px;
+  color: #b7c6d7;
+  text-align: right;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .checkbox {
@@ -8842,34 +8901,12 @@ header {
 }
 
 .gallery__slider {
-  height: 230px;
+  display: none;
   overflow: hidden;
 }
 
-.gallery__slider:before {
-  content: '';
+.gallery__slider_active {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 188px;
-  height: 100%;
-  background: #fff;
-  opacity: 0.8;
-  z-index: 100;
-}
-
-.gallery__slider:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 188px;
-  height: 100%;
-  background: #fff;
-  opacity: 0.8;
-  z-index: 100;
 }
 
 .gallery__slider .slick-slide {
@@ -8891,12 +8928,12 @@ header {
 }
 
 .gallery__slider .arrow-left {
-  left: 20%;
+  left: 5%;
   top: 0;
 }
 
 .gallery__slider .arrow-right {
-  right: 20%;
+  right: 5%;
   top: 0;
 }
 
@@ -8997,8 +9034,21 @@ header {
   }
 }
 
-.layout img {
-  width: 100%;
+.layout__img {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.layout__img img {
+  width: 30%;
+}
+
+.layout__img .modal-dialog {
+  max-width: 50%;
+}
+
+.layout__scheme {
+  display: inline;
 }
 
 .colors__info {
@@ -9420,7 +9470,6 @@ header {
   font-weight: 400;
   letter-spacing: -0.22px;
   padding: 15px 0 20px 0;
-  cursor: pointer;
 }
 
 @media (max-width: 991.98px) {
@@ -9559,6 +9608,10 @@ header {
   .option__technical img {
     width: 20px;
   }
+}
+
+.option__description {
+  display: none;
 }
 
 .value__calculation {

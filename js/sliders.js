@@ -1,11 +1,12 @@
 $(document).ready(function () {
   $(function(){
-    $('.gallery__slider').slick({
+    $('.gallery__slider:first').slick({
       prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
       centerMode: false,
       centerPadding: '0px',
-      slidesToShow: 6,
+      slidesToShow: 5,
+      infinite: true,
       responsive: [
         {
           breakpoint: 768,
@@ -32,6 +33,14 @@ $(document).ready(function () {
       prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
       dots: true,
+      asNavFor: '.colors__home'
+    });
+
+    $('.colors__home').slick({
+      dots: false,
+      fade: true,
+      arrows: false,
+      asNavFor: '.colors__slider'
     });
 
     $('.works__slider').slick({

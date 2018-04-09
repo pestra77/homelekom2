@@ -31,20 +31,10 @@ $(function(){
     $('.city__dropdown').toggleClass('city__dropdown_active');
   });
 
-  $(".city__item").click(function(event) {
-    var val = $(this).text();
-    $(".city__item").each(function(index, el) {
-      $(this).removeClass("active");
-    });
-    $(this).addClass('active');
-    $(".navigation__city_right").text(val);
-  });
-
   $('.checkbox__input').change(function(event) {
     var val = $(this).val();
     var currentSum = $('#total').html()
     currentSum = currentSum.replace(/\s/g,'');
-    console.log(currentSum)
     currentSum = +currentSum;
     val = +val;
     if ($(this).prop('checked')) {
@@ -78,4 +68,63 @@ $(function(){
   $('#send').click(function(event) {
     $('#confirmModal').modal('show')
   });
+
+	$('.layout__scheme').on('click', function() {
+		$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+		$('#imagemodal').modal('show');
+	});
+
+  $('.options-label').click(function(e) {
+    var button = $(this);
+    var input = $('#' + button.attr('for'));
+    var desc = button.next().text();
+
+    if (input.prop('checked')) {
+
+    } else {
+      var modal = $('#optionModal');
+      modal.find('#optionModalTitle').text(input.prop('name'));
+      modal.find('#optionModalPrice').text(input.prop('value'));
+      modal.find('#optionModalDesc').text(desc);
+      modal.modal("show");
+    }
+  });
+
+  $('.gallery__switcher').click(function(e) {
+    $('.gallery__slider.gallery__slider_active').removeClass('gallery__slider_active');
+    $('#gallery_' + $(this).attr('for')).addClass('gallery__slider_active');
+    $('#gallery_' + $(this).attr('for')).slick({
+      prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
+      nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
+      centerMode: false,
+      centerPadding: '0px',
+      slidesToShow: 5,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+      ]
+    });
+  });
+
+  $('.pop').on('click', function() {
+		$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+		$('#imageModal').modal('show');
+	});
 });
