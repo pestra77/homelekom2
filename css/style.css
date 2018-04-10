@@ -9438,6 +9438,14 @@ header {
   }
 }
 
+.complectation__switch {
+  padding: 20px 0;
+}
+
+.complectation__switch label {
+  text-transform: uppercase;
+}
+
 .other-side .complectation__img {
   padding-left: 39px;
   text-align: left;
@@ -10321,8 +10329,13 @@ footer {
 .contacts__tel {
   color: #fff;
   font-family: Avenir;
-  font-size: 2.8vw;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .contacts__tel {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 1199.98px) {

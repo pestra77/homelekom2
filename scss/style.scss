@@ -1137,6 +1137,12 @@ header {
       padding-left: 10px;
     }
   }
+  &__switch {
+    padding: 20px 0;
+    label {
+      text-transform: uppercase;
+    }
+  }
 }
 .other-side {
   .complectation__img {
@@ -1845,8 +1851,11 @@ footer {
   &__tel {
     color: #fff;
     font-family: Avenir;
-    font-size: 2.8vw;
+
     text-align: center;
+    @include media-breakpoint-up(xl) {
+      font-size: 35px;
+    }
     @include media-breakpoint-down(lg) {
       font-size: 3.6vw;
     }
