@@ -8281,15 +8281,15 @@ ul {
 }
 
 .call_white {
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   margin-right: 0;
   background-color: #5c5b56;
 }
 
 .call_white i {
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .modal input, .modal button, .modal select, .modal optgroup, .modal textarea {
@@ -8385,6 +8385,7 @@ ul {
 
 #confirmModal .modal-header {
   height: 72px;
+  font-family: Muller;
 }
 
 #confirmModal .modal-header .modal-title {
@@ -8397,6 +8398,7 @@ ul {
   color: #959494;
   font-size: 20px;
   text-align: center;
+  font-family: Muller;
 }
 
 #confirmModal .modal__info .phone {
@@ -8476,6 +8478,25 @@ ul {
   #imagemodal .modal-dialog {
     max-width: 100%;
   }
+}
+
+.modal-feedback {
+  max-width: 580px;
+  font-family: Muller;
+}
+
+.modal-feedback .modal__input {
+  text-align: center;
+}
+
+.modal-feedback .modal__input:first-of-type:before, .modal-feedback .modal__input:nth-of-type(2):before {
+  left: 80px;
+  color: #c9c7c7;
+}
+
+.modal-feedback .modal__input input {
+  width: 345px;
+  color: rgba(201, 199, 199, 0.8);
 }
 
 .checkbox {
@@ -8877,7 +8898,6 @@ header {
 
 .gallery__info {
   margin-bottom: 15px;
-  text-align: center;
   color: #757575;
   font-size: 18px;
   font-weight: 400;
@@ -9204,19 +9224,19 @@ header {
 }
 
 .colors__slider .slick-dots li:first-of-type button {
-  background: #c79886;
+  background: #d4d4d4;
 }
 
 .colors__slider .slick-dots li:nth-of-type(2) button {
-  background: #d1d0af;
+  background: #c79886;
 }
 
 .colors__slider .slick-dots li:nth-of-type(3) button {
-  background: #b5c8c9;
+  background: #d1d0af;
 }
 
 .colors__slider .slick-dots li:nth-of-type(4) button {
-  background: #d4d4d4;
+  background: #b5c8c9;
 }
 
 .colors__slider .slick-dots button {
@@ -9504,9 +9524,12 @@ header {
   background-color: #fcfbfb;
   text-align: center;
   height: 63px;
-  color: #454444;
-  font-size: 22px;
-  font-weight: 400;
+  color: #a6b2c0;
+  text-transform: uppercase;
+  font-size: 19px;
+  line-height: 40px;
+  font-weight: 700;
+  opacity: 0.7;
   letter-spacing: -0.22px;
   padding: 15px 0 20px 0;
 }
@@ -9570,7 +9593,7 @@ header {
 .option__wrapper {
   padding-top: 47px;
   padding-bottom: 34px;
-  padding-left: 70px;
+  padding-left: 30px;
   padding-right: 10px;
 }
 
@@ -9678,7 +9701,7 @@ header {
   justify-content: flex-end;
   padding-right: 83px;
   color: #454444;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -9742,7 +9765,7 @@ header {
 
 .value__total_bottom {
   color: #454444;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -9964,7 +9987,7 @@ header {
 }
 
 .works__photo {
-  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .works__slider .arrow {
