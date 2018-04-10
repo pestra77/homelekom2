@@ -59,5 +59,13 @@ window.onload = function () {
         $('#total').text(prettyNumber(regions[i][complectationType()] * 115));
       }
     }
+
+    if ($('input[name=complectation-type-radio]').prop('checked')) {
+      $('p#6').addClass('disabled');
+      $('p#8').addClass('disabled');
+    } else {
+      $('p#6').removeClass('disabled');
+      $('p#8').removeClass('disabled');
+    }
   })
 }

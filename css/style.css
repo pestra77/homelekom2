@@ -8893,6 +8893,8 @@ header {
 }
 
 .gallery__radio {
+  margin-right: 45px;
+  margin-left: 24px;
   color: #a6b2c0;
   font-size: 19px;
   font-weight: 700;
@@ -8910,6 +8912,15 @@ header {
   .gallery__radio {
     font-size: 16px;
     line-height: 27px;
+    margin-right: 25px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .gallery__radio {
+    margin-right: 10px;
+    margin-left: -10px;
   }
 }
 
@@ -9356,6 +9367,11 @@ header {
   cursor: pointer;
 }
 
+.complectation__list .complectation-pane.disabled {
+  cursor: default;
+  opacity: 0.2;
+}
+
 .complectation__info {
   background-color: #b7c6d7;
   color: #ffffff;
@@ -9439,7 +9455,8 @@ header {
 }
 
 .complectation__switch {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .complectation__switch label {
@@ -9668,6 +9685,7 @@ header {
 @media (max-width: 991.98px) {
   .value__price {
     padding-right: 35px;
+    font-size: 40px;
   }
 }
 
@@ -9704,6 +9722,7 @@ header {
 @media (max-width: 991.98px) {
   .value__total {
     padding-left: 35px;
+    font-size: 40px;
   }
 }
 

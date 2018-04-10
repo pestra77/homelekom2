@@ -1,5 +1,6 @@
 $(function(){
   $('.complectation-pane').click(function(event) {
+    if ($(this).hasClass('disabled')) return;
     var indexOfActive = $(this).attr('id');
     $('.complectation-pane').each(function(index, el) {
       $(this).removeClass('complectation__list_active');

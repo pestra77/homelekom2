@@ -653,6 +653,8 @@ header {
     }
   }
   &__radio {
+    margin-right: 45px;
+    margin-left: 24px;
     color: #a6b2c0;
     font-size: 19px;
     font-weight: 700;
@@ -666,6 +668,12 @@ header {
     @include media-breakpoint-down(lg) {
       font-size: 16px;
       line-height: 27px;
+      margin-right: 25px;
+      margin-left: 5px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-right: 10px;
+      margin-left: -10px;
     }
   }
   &__slider {
@@ -1073,6 +1081,10 @@ header {
     }
     .complectation-pane {
       cursor: pointer;
+      &.disabled {
+        cursor: default;
+        opacity: 0.2;
+      }
     }
   }
   &__info {
@@ -1138,7 +1150,8 @@ header {
     }
   }
   &__switch {
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
     label {
       text-transform: uppercase;
     }
@@ -1316,6 +1329,7 @@ header {
     // letter-spacing: -2.25px;
     @include media-breakpoint-down(md) {
       padding-right: 35px;
+      font-size: 40px;
     }
     @include media-breakpoint-down(sm) {
       font-size: 35px;
@@ -1340,6 +1354,7 @@ header {
     padding-left: 83px;
     @include media-breakpoint-down(md) {
       padding-left: 35px;
+      font-size: 40px;
     }
     &_top {
       padding-left: 100px;
