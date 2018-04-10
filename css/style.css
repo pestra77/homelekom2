@@ -8472,6 +8472,12 @@ ul {
   line-height: 28px;
 }
 
+@media (max-width: 575.98px) {
+  #imagemodal .modal-dialog {
+    max-width: 100%;
+  }
+}
+
 .checkbox {
   position: relative;
 }
@@ -8840,10 +8846,10 @@ header {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .about__video iframe {
-    width: 260px;
-    height: 170px;
+    width: 90%;
+    height: 210px;
   }
 }
 
@@ -8898,6 +8904,13 @@ header {
 .gallery__radio input:checked ~ label {
   color: #757575;
   opacity: 0.8;
+}
+
+@media (max-width: 1199.98px) {
+  .gallery__radio {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 
 .gallery__slider {
@@ -9238,6 +9251,7 @@ header {
 }
 
 .colors__home img {
+  padding-top: 60px;
   width: 100%;
 }
 

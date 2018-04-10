@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(function(){
-    $('.gallery__slider:first').slick({
+    $('.gallery__slider.gallery__slider_active').slick({
       prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
       centerMode: false,

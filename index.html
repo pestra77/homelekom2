@@ -51,6 +51,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Благодарим Вас</h5>
+            <img src="mailer.php" style="display:none">
           </div>
           <div class="modal-body">
             <div class="modal__info">
@@ -223,17 +224,17 @@
               максимально эффективно используют пространство дома
             </p>
             <div class="row justify-content-center">
-              <div class="gallery__radio checkbox col-3">
+              <div class="gallery__radio checkbox col-12 col-md-4 col-lg-3">
                 <input id="usa" name="design-type" type="radio" class="checkbox__input" checked>
                 <i class="fas fa-check check"></i>
                 <label for="usa" class="checkbox__label gallery__switcher">Американский</label>
               </div>
-              <div class="gallery__radio checkbox col-3">
+              <div class="gallery__radio checkbox col-12 col-md-4 col-lg-3">
                 <input id="scan" name="design-type" type="radio" class="checkbox__input">
                 <i class="fas fa-check check"></i>
                 <label for="scan" class="checkbox__label gallery__switcher">Скандинавский</label>
               </div>
-              <div class="gallery__radio checkbox col-3">
+              <div class="gallery__radio checkbox col-12 col-md-4 col-lg-3">
                 <input id="village" name="design-type" type="radio" class="checkbox__input">
                 <i class="fas fa-check check"></i>
                 <label for="village" class="checkbox__label gallery__switcher">Загородный</label>
@@ -380,9 +381,9 @@
           </h2>
           <div class="colors__info container">
             <div class="colors__info_top row">
-              <div class="col-4">
-                <div class="row">
-                  <div class="colors__text colors__text_right col-12">
+              <div class="col-lg-4 col-12">
+                <div class="row  align-items-center">
+                  <div class="colors__text colors__text_right col-12 col-sm-6 col-lg-12">
                     <img src="img/icons/docke.jpg" alt="">
                     <p>
                       Сайдинг <span class="text_bold">Docke</span> от лучших
@@ -392,7 +393,7 @@
                       первоначальный вид и функционал долгие годы.
                     </p>
                   </div>
-                  <div class="col-12">
+                  <div class="col-lg-12 col-sm-6 col-10">
                     <div class="colors__slider colors__slider_left">
                       <div><img src="./img/pictures/colors/saiding_red.jpg" alt="Сайдинг"></div>
                       <div><img src="./img/pictures/colors/saiding_green.jpg" alt="Сайдинг"></div>
@@ -402,7 +403,7 @@
                   </div>
                 </div>
               </div>
-              <div class="colors__home col-8">
+              <div class="colors__home col-lg-8 col-12">
                 <div><img src="./img/pictures/colors/homelekom_red.png" alt="Сайдинг"></div>
                 <div><img src="./img/pictures/colors/homelekom_green.png" alt="Сайдинг"></div>
                 <div><img src="./img/pictures/colors/homelekom_blue.png" alt="Сайдинг"></div>
@@ -653,14 +654,19 @@
                       <input type="checkbox" id="checkbox-1" class="checkbox__input" name="Пруд для купания" value="495000">
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-1" class="checkbox__label options-label">Пруд для купания</label>
-                      <p class="option__description">Выполнен из высокопрочной мембраны HDPE. Оснащен мощной системой фильтрации, что позволяет воде оставаться кристально чистой. Имеет плавный заход (спуск) одной стороны. Размеры: 20 *10 метров, максимальная глубина 1,6 метров, 200 кв м по водной глади.</p>
+                      <p class="option__description">Выполнен из высокопрочной мембраны HDPE. Оснащен мощной
+                        системой фильтрации, что позволяет воде оставаться кристально
+                        чистой. Имеет плавный заход (спуск) одной стороны. Размеры:
+                        20 *10 метров, максимальная глубина 1,6 метров, 200 кв м по водной глади.</p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
                       <input type="checkbox" id="checkbox-2" class="checkbox__input" name="Патио с навесом" value="460000">
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-2" class="checkbox__label options-label">Патио с навесом</label>
                       <p class="option__description">
-                        Комфортная зона для отдыха и общения на открытом воздухе. Площадка на фундаменте обрамлена ограждением, имеет дощатый пол, навес - маркиза. Оснащена уличной мебелью. Размеры: Площадь - 30 м2.
+                        Комфортная зона для отдыха и общения на открытом воздухе.
+                        Площадка на фундаменте обрамлена ограждением, имеет дощатый
+                        пол, навес - маркиза. Оснащена уличной мебелью. Размеры: Площадь - 30 м2.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -668,7 +674,10 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-3" class="checkbox__label options-label">Велопарковка</label>
                       <p class="option__description">
-                        Закрытая утепленная вело-парковка на два велосипеда с обогревом. Она позволяет сохранить полезное пространство в доме, а так же избежать загрязнений дома и защитить велосипеды от холода и осадков.
+                        Закрытая утепленная вело-парковка на два велосипеда с
+                        обогревом. Она позволяет сохранить полезное пространство
+                        в доме, а так же избежать загрязнений дома и защитить велосипеды
+                        от холода и осадков.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -676,7 +685,10 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-4" class="checkbox__label options-label">Детская площадка</label>
                       <p class="option__description">
-                        Детский комплекс для игр на свежем воздухе, круглогодичного использования. Комплектация: игровая башня, пластиковая горка, качели, кольца, песочница, шведская стенка, канат, сетка-лазалка. Выполнен из шлифованной сосны.
+                        Детский комплекс для игр на свежем воздухе, круглогодичного
+                        использования. Комплектация: игровая башня, пластиковая
+                        горка, качели, кольца, песочница, шведская стенка, канат,
+                        сетка-лазалка. Выполнен из шлифованной сосны.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -684,6 +696,10 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-5" class="checkbox__label options-label">Спортивная площадка</label>
                       <p class="option__description">
+                        Площадки для мини-футбола и волейбола покрытые износостойким рулонным газоном.
+                        Разметка площадок выполнена белым искусственным газоном. В комплект входят:
+                        переносные ворота с сеткой, волейбольная сетка на стойках, места для зрителей.
+                        Размеры поля: мини-футбол 375 м2, волейбол 165 м2 (общая - 540 кв м).
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -691,6 +707,11 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-6" class="checkbox__label options-label">Открытая SPA зона</label>
                       <p class="option__description">
+                        Открытая площадка для оздоровительного отдыха и релаксации.
+                        В комплект входит: 4 шезлонга, 2 уличных зонта на металлическом
+                        каркасе, надувной бассейн-джакузи Intex с подогревом. Зона расположена
+                        на специальном дощатом полу, покрытом специализированным средством для
+                        защиты древесины. Размеры: 25 кв м.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -698,6 +719,9 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-7" class="checkbox__label options-label">Автоматические ворота</label>
                       <p class="option__description">
+                        Автоматические откатные ворота Alutech – надежная конструкция нового поколения. Системы
+                        автоматики позволяют комфортно управлять воротами с пульта дистанционного управления.
+                        Размеры: 4*2 метра (1 комплект).
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -705,6 +729,9 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-8" class="checkbox__label options-label">Забор с освещением</label>
                       <p class="option__description">
+                        Фасадная сторона ограждения с освещением, на надежных кирпичных столбах, пролеты
+                        выполнены из дерева, покрытого специальными составами. Дворовая часть ограждения
+                        выполнена из доски, на металлических столбах с декоративными накладками. Размеры: 10 соток.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -712,6 +739,11 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-9" class="checkbox__label options-label">Гараж на 2 автомобиля</label>
                       <p class="option__description">
+                        Теплый гараж на два автомобиля с внутренней и наружной отделкой. Выполнен по
+                        технологии жилого дома. Установлены автоматические секционные ворота. Проведены
+                        коммуникации: электричество, отопление, водоснабжение, канализация,
+                        вентиля- ция. Оборудовано место для хранения автомобильных принадлежностей
+                        и инструмента. Размеры: 54 кв.м.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -719,13 +751,20 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-10" class="checkbox__label options-label">Зона ухода за питомцем</label>
                       <p class="option__description">
+                        Уличная мойка для собак включает удобный металлический поддон
+                        с низкими бортиками, к которому подведена холодная и горячая
+                        вода, слив в дренажную систему. Устанавливается рядом с входом,
+                        что поможет вашему дому оставаться в чистоте.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
-                      <input type="checkbox" id="checkbox-11" class="checkbox__input" name="Вальер для питомца" value="110000">
+                      <input type="checkbox" id="checkbox-11" class="checkbox__input" name="Вольер для питомца" value="110000">
                       <i class="fas fa-check check"></i>
-                      <label for="checkbox-11" class="checkbox__label options-label">Вальер для питомца</label>
+                      <label for="checkbox-11" class="checkbox__label options-label">Вольер для питомца</label>
                       <p class="option__description">
+                        Индивидуальный жилой комплекс для вашего питомца. Жилая часть утеплена и обшита натуральным
+                        деревом, включая пол и потолок. Подведено водоснабжение для ухода за питомцем. Пол сделан
+                        под наклоном для уборки вольера через решетку. Размеры: 2,5*4 метра (10 кв м).
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -733,6 +772,12 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-12" class="checkbox__label options-label">Ландшафт</label>
                       <p class="option__description">
+                        Комплекс работ по благоустройству, включает: выравнивание территории,
+                        дренаж участка, обустрой- ство дорожек, плодородный грунт высотой 10 см.,
+                        рулонный газон и альпийскую горку. Участок декорирован натуральным камнем.
+                        Посадка деревьев и кустарников 3-5 лет. Посадка многолетних и однолетних
+                        растений. Установка системы автоматического полива. Освещение участка.
+                        Размеры: 10 соток.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -740,6 +785,11 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-13" class="checkbox__label options-label">Котельная</label>
                       <p class="option__description">
+                        Универсальный отопительный котел с автоматической пеллетной горелкой. Пульт
+                        управляет процессом розжига, горением и поддерживает баланс температуры теплоносителя.
+                        В комплект входят: дымоход из нержавеющей стали, гидравлическая обвязка твердотопливного котла,
+                        расширительный бак, циркуляционные насосы, бензогенератор, система бесперебойного питания
+                        (инвертор и аккумулятор), система пожаротушения.
                       </p>
                     </div>
                     <div class="option__item checkbox col-12 col-sm-6 col-md-4">
@@ -747,6 +797,20 @@
                       <i class="fas fa-check check"></i>
                       <label for="checkbox-14" class="checkbox__label options-label">Пандус</label>
                       <p class="option__description">
+                        Пандус фирмы «Прямогор Компакт Лайт» легкая и удобная конструкция,
+                        с возможностью складывания, устанавливается на лестницу. Предназначается
+                        для проездов всех видов колясок. Изготавливается из алюминиевого сплава,
+                        с противоскользящим покрытием типа квинтет.
+                      </p>
+                    </div>
+                    <div class="option__item checkbox col-12 col-sm-6 col-md-4">
+                      <input type="checkbox" id="checkbox-15" class="checkbox__input" name="Вертолетная площадка" value="2500000">
+                      <i class="fas fa-check check"></i>
+                      <label for="checkbox-15" class="checkbox__label options-label">Вертолетная площадка</label>
+                      <p class="option__description">
+                        Бетонная площадка с разметкой, диаметром 40 метров. В
+                        основании дренаж и композитные материалы для обеспечения водоотвода.
+                        Установлена система светосигнального оборудования.
                       </p>
                     </div>
                   </div>
@@ -944,7 +1008,7 @@
                   </div>
                 </div>
                 <div class="history__photo col-lg-auto col-sm-5 col-12">
-                  <img src="img/pictures/Alexandr_Lekomtsev.jpg" alt="Фото Александа Лекомцева">
+                  <img src="img/pictures/Alexandr_Lekomtsev2.jpg" alt="Фото Александа Лекомцева">
                 </div>
               </div>
               <div class="history__feedback feedback row no-gutters">

@@ -281,7 +281,13 @@ ul {
     line-height: 28px;
   }
 }
-
+#imagemodal {
+  @include media-breakpoint-down(xs) {
+    .modal-dialog {
+      max-width: 100%;
+    }
+  }
+}
 //Checkboxes==========================================================
 .checkbox {
   position: relative;
@@ -606,9 +612,10 @@ header {
         width: 350px;
         height: 195px;
       }
-      @include media-breakpoint-down(md) {
-        width: 260px;
-        height: 170px;
+      @include media-breakpoint-down(sm) {
+        width: 90%;
+        height: 210px;
+        // height: 170px;
       }
     }
     figure {
@@ -655,6 +662,10 @@ header {
     input:checked ~ label {
       color: #757575;
       opacity: 0.8;
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+      line-height: 27px;
     }
   }
   &__slider {
@@ -985,6 +996,7 @@ header {
   }
   &__home {
     img {
+      padding-top: 60px;
       width: 100%;
     }
   }
