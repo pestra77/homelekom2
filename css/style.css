@@ -10081,8 +10081,14 @@ header {
 }
 
 .works__slider iframe {
-  width: 500px;
-  height: 280px;
+  width: 100%;
+  height: 10em;
+}
+
+@media (min-width: 992px) {
+  .works__slider iframe {
+    height: 14em;
+  }
 }
 
 .works__slider .arrow {
