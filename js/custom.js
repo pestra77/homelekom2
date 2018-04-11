@@ -161,5 +161,12 @@ $(function(){
     $('#preview-2').addClass('hidden');
     ev.preventDefault();
   });
-  
+
+  $('#preview-3').on('click', function(ev) {
+    $("#video-3")[0].src += "&autoplay=1";
+    $('#preview-3').addClass('hidden');
+    // $('#preview-3').hide();
+    ev.preventDefault();
+  });
+
 });
