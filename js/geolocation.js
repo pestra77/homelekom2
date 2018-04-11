@@ -49,6 +49,8 @@ var complectationType = function () {
   return $('input[name=complectation-type-radio]:checked').val();
 };
 window.onload = function () {
+  $('#loader').fadeTo( 500, 0 );
+  $('#loader').hide();
   for (var i = 0; i < regions.length; i++) {
     $('.city__dropdown').append('<li class="city__item" region="' + regions[i].id + '">'+ regions[i].center +'</li>');
   }
@@ -106,8 +108,9 @@ window.onload = function () {
     var buttonsContainer = $('.city-buttons-modal');
     buttonsContainer.html('')
     for (var i = 0; i < regions.length; i++) {
-      buttonsContainer.append('<button class="button choose-modal-my-city" region="' + regions[i].id + '">'+ regions[i].center +'</button>')
+      buttonsContainer.append('<button class="button choose-modal-my-city" region="' + regions[i].id + '">'+ regions[i].center +'</button>');
     }
+    buttonsContainer.append('<button class="button choose-modal-my-city" region="0">Другой</button>')
   });
 
   $(document).on('click', '.choose-modal-my-city', function() {

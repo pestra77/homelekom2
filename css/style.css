@@ -8165,6 +8165,11 @@ a.text-dark:hover, a.text-dark:focus {
   outline: 0;
 }
 
+body {
+  overflow-x: hidden;
+  padding-right: 0 !important;
+}
+
 a, a:hover, a:visited, a:active {
   color: inherit;
   text-decoration: none;
@@ -8290,6 +8295,12 @@ ul {
 .call_white i {
   font-size: 18px;
   line-height: 32px;
+}
+
+.modal-open {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-right: 0 !important;
 }
 
 .modal input, .modal button, .modal select, .modal optgroup, .modal textarea {
@@ -8528,6 +8539,14 @@ ul {
   height: 40px;
   line-height: 42px;
   margin-right: 10px;
+}
+
+.choose-modal-my-city {
+  display: inline-block !important;
+  width: auto !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
 }
 
 .checkbox {
@@ -10354,6 +10373,37 @@ header {
 @media (max-width: 767.98px) {
   .feedback__name {
     font-size: 15px;
+  }
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("../img/logos/small/hl.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1000;
+}
+
+.loader__spinner {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-bottom: 4px solid #b7c6d7;
+  -webkit-animation: rotation 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
   }
 }
 
