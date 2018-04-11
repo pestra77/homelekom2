@@ -133,32 +133,25 @@ $(function(){
     var data = {
         name: $("#userName").val(),
         phone: $("#userPhone").val(),
-        email: $("#userEmail").val(),
-        city: $(".navigation__city_right").text()
+        email: $("#userEmail").val()
     };
-    console.log(data);
-    if (data.name.trim() && data.phone.trim()) {
-      $.ajax({
-          type: "POST",
-          url: "http://homelekom.ru/mailer.php",
-          data: data,
-          success: function(){
-            $('#exampleModal').modal('hide');
-            $('#confirmModal').modal('show');
-          }
-      });
-    }
-  });
+    $.ajax({
+        type: "POST",
+        url: "http://homelekom.ru/mailer.php",
+        data: data,
+        success: function(){
+          console.log('yo')
+        }
+    });
 
-  $('#preview-1').on('click', function(ev) {
-    $("#video-1")[0].src += "&autoplay=1";
-    $('#preview-1').addClass('hidden');
-    ev.preventDefault();
-  });
+    // $.ajax({
+    //     type: "POST",
+    //     url: "http://homelekom.ru/mailer.php",
+    //     data: $('#feedbackForm').serialize(),
+    //     success: function(){
+    //       console.log('yo')
+    //     }
+    // });
 
-  $('#preview-2').on('click', function(ev) {
-    $("#video-2")[0].src += "&autoplay=1";
-    $('#preview-2').addClass('hidden');
-    ev.preventDefault();
   });
 });
