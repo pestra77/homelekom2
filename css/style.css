@@ -8516,6 +8516,20 @@ ul {
   color: #c9c7c7;
 }
 
+#cityRefinement .option-modal__body p {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#cityRefinement button {
+  text-transform: none;
+  display: inline;
+  width: 40%;
+  height: 40px;
+  line-height: 42px;
+  margin-right: 10px;
+}
+
 .checkbox {
   position: relative;
 }

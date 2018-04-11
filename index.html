@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./css/fontawesome-all.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Homelekom - дома для жизни</title>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="./js/geolocation.js"></script>
+    <title>homelekom - дома для жизни</title>
   </head>
   <body>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -95,6 +97,22 @@
               Для расчета стоимости в вашем регионе обратитесь к менеджеру
             </p>
             <a href="tel:88005115191"><strong>8 800 511 51 91</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade option-modal" id="cityRefinement" aria-labelledby="optionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="option-modal__header">
+            <img src="img/logos/small/logo.png" alt="Logo">
+            <h1 class="option-modal__title">Ваш город <strong id="modal-city-name-refine"></strong>?</h1>
+          </div>
+          <div class="option-modal__body">
+            <p class="city-buttons-modal">
+              <button id="confirmMyCity" class="button">Да</button>
+              <button id="chooseMyCity" class="button">Выбрать город</button>
+            </p>
           </div>
         </div>
       </div>
@@ -856,11 +874,11 @@
           <div class="container">
             <div class="value__calculation row">
               <div class="value__price col-12 col-sm-6">
-                <p><span id="price">70 000</span> руб / м<sup>2</sup></p>
+                <p><span id="price">0</span> руб / м<sup>2</sup></p>
               </div>
               <div class="value__total col-12 col-sm-6">
                 <p class="value__total_top">Model С</p>
-                <p class="value__total_bottom"><span id="total" val="4690000">8 050 000</span> руб</p>
+                <p class="value__total_bottom"><span id="total" val="4690000">0</span> руб</p>
               </div>
             </div>
             <p class="value__info">
@@ -1095,11 +1113,11 @@
     </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
     <script src="./js/slick.min.js"></script>
     <script src="./js/sliders.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/regions.js"></script>
-    <script src="./js/geolocation.js"></script>
+
   </body>
 </html>

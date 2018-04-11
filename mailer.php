@@ -16,6 +16,6 @@ if($_POST){
                 </html>';
     $headers  = "Content-type: text/html; charset=utf-8 \r\n";
 
-    mail("xagrssr@gmail.com", "Заявка от:" .$email, $message, $headers);
+    mail("sale@homelekom.ru", "Заявка от:" .$email, $message, $headers);
 }
 ?>
