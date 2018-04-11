@@ -199,6 +199,9 @@ ul {
       border: 1px solid #b7c6d7;
       font-size: 14px;
     }
+    .error {
+      border-color: red;
+    }
   }
   &__info {
     width: 300px;
@@ -609,9 +612,9 @@ header {
     padding-left: 44px;
     padding-right: 44px;
     color: #757575;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 27px;
     letter-spacing: -0.22px;
     @include media-breakpoint-down(md) {
       font-size: 16px;
@@ -685,7 +688,7 @@ header {
       }
     }
     .video-preview {
-      width: 100%;
+      width: 99%;
       position: absolute;
       cursor: pointer;
       top: -2px;
@@ -1647,15 +1650,15 @@ header {
           -ms-flex-align: center;
               align-items: center;
       position: absolute;
-      top: 50%;
+      top: 46%;
       z-index: 100;
       line-height: 25px;
       cursor: pointer;
       &-left {
-        left: 5%;
+        left: 2%;
       }
       &-right {
-        right: 5%;
+        right: 2%;
       }
       i {
         display: block;

@@ -8383,6 +8383,10 @@ ul {
   font-size: 14px;
 }
 
+.modal__input .error {
+  border-color: red;
+}
+
 .modal__info {
   width: 300px;
   margin: 0 auto;
@@ -8844,9 +8848,9 @@ header {
   padding-left: 44px;
   padding-right: 44px;
   color: #757575;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 27px;
   letter-spacing: -0.22px;
 }
 
@@ -8950,7 +8954,7 @@ header {
 }
 
 .about__video .video-preview {
-  width: 100%;
+  width: 99%;
   position: absolute;
   cursor: pointer;
   top: -2px;
@@ -10089,18 +10093,18 @@ header {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 46%;
   z-index: 100;
   line-height: 25px;
   cursor: pointer;
 }
 
 .works__slider .arrow-left {
-  left: 5%;
+  left: 2%;
 }
 
 .works__slider .arrow-right {
-  right: 5%;
+  right: 2%;
 }
 
 .works__slider .arrow i {

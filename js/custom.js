@@ -147,6 +147,9 @@ $(function(){
             $('#confirmModal').modal('show');
           }
       });
+    } else {
+      $("#userName").addClass('error');
+      $("#userPhone").addClass('error');
     }
   });
 
