@@ -9167,6 +9167,7 @@ header {
 
 .layout__scheme {
   display: inline;
+  padding: 0 25px;
 }
 
 .colors__info {
@@ -10088,6 +10089,12 @@ header {
 @media (min-width: 992px) {
   .works__slider iframe {
     height: 14em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .works__slider iframe {
+    height: 17em;
   }
 }
 

@@ -893,6 +893,7 @@ header {
   }
   &__scheme {
     display: inline;
+    padding: 0 25px;
   }
 }
 
@@ -1643,6 +1644,9 @@ header {
       height: 10em;
       @media (min-width: 992px) {
         height: 14em;
+      }
+      @media (min-width: 1200px) {
+        height: 17em;
       }
     }
     .arrow {
