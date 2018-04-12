@@ -707,6 +707,7 @@ header {
     margin-bottom: 15px;
   }
   &__info {
+    margin: 0 180px 15px 210px;
     margin-bottom: 15px;
     color: #757575;
     font-size: 18px;
@@ -730,6 +731,12 @@ header {
     input:checked ~ label {
       color: #757575;
       opacity: 0.8;
+    }
+    .checkbox__label:before {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      top: -1px;
     }
     @include media-breakpoint-down(lg) {
       font-size: 16px;
@@ -1349,6 +1356,12 @@ header {
     }
     .option-label {
       font-size: 17px;
+    }
+    .checkbox__label:before {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      top: -1px;
     }
   }
   &__technical {

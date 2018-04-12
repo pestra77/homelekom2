@@ -1,4 +1,8 @@
 $(function(){
+  var prettyNumber = function(value) {
+    return String(value).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')
+  }
+
   $('.complectation-pane').click(function(event) {
     if ($(this).hasClass('disabled')) return;
     var indexOfActive = $(this).attr('id');
@@ -85,7 +89,7 @@ $(function(){
     } else {
       var modal = $('#optionModal');
       modal.find('#optionModalTitle').text(input.prop('name'));
-      modal.find('#optionModalPrice').text(input.prop('value'));
+      modal.find('#optionModalPrice').text(prettyNumber(input.prop('value')));
       modal.find('#optionModalDesc').text(desc);
       modal.modal("show");
     }

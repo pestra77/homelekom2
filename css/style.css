@@ -8971,6 +8971,7 @@ header {
 }
 
 .gallery__info {
+  margin: 0 180px 15px 210px;
   margin-bottom: 15px;
   color: #757575;
   font-size: 18px;
@@ -9000,6 +9001,13 @@ header {
 .gallery__radio input:checked ~ label {
   color: #757575;
   opacity: 0.8;
+}
+
+.gallery__radio .checkbox__label:before {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  top: -1px;
 }
 
 @media (max-width: 1199.98px) {
@@ -9713,6 +9721,13 @@ header {
 
 .option__item .option-label {
   font-size: 17px;
+}
+
+.option__item .checkbox__label:before {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  top: -1px;
 }
 
 .option__technical {

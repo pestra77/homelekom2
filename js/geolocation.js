@@ -29,13 +29,20 @@ var regions = [
   },
   {
     id: 5,
+    name: 'Краснодарский край',
+    center: 'Краснодар',
+    priceStandart: 53000,
+    pricePremium: 64000
+  },
+  {
+    id: 6,
     name: 'Нижегородская область',
     center: 'Нижний Новгород',
     priceStandart: 64000,
     pricePremium: 77000
   },
   {
-    id: 6,
+    id: 7,
     name: 'Тюменская область',
     center: 'Тюмень',
     priceStandart: 59000,
