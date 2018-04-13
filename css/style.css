@@ -8971,7 +8971,9 @@ header {
 }
 
 .gallery__info {
-  margin: 0 180px 15px 210px;
+  margin-top: 0;
+  margin-right: 16%;
+  margin-left: 17%;
   margin-bottom: 15px;
   color: #757575;
   font-size: 18px;
