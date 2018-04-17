@@ -79,6 +79,10 @@ $(function(){
 		$('#imagemodal').modal('show');
 	});
 
+  $('.value__info_click').on('click', function() {
+		$('#bankModal').modal('show');
+	});
+
   $('.options-label').click(function(e) {
     var button = $(this);
     var input = $('#' + button.attr('for'));

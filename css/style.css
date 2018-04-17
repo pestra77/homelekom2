@@ -8228,23 +8228,6 @@ ul {
   color: #ffffff;
 }
 
-.text_bold {
-  font-weight: 700;
-}
-
-.text_blue {
-  color: #759ac4;
-}
-
-.text_small {
-  margin-top: 24px;
-  color: #ffffff;
-  font-size: 11px;
-  line-height: 15px;
-  font-weight: 400;
-  letter-spacing: -0.08px;
-}
-
 .button {
   display: block;
   margin: 0 auto;
@@ -8551,6 +8534,63 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 10px;
+}
+
+#bankModal .bank-modal {
+  max-width: 700px;
+}
+
+#bankModal .bank-modal__logo {
+  width: 238px;
+  margin: 0 auto;
+}
+
+#bankModal .bank-modal__logo img {
+  width: 100%;
+}
+
+#bankModal .bank-modal__body {
+  padding: 25px 80px 35px;
+  color: #757575;
+}
+
+#bankModal .bank-modal__text {
+  margin-top: 20px;
+}
+
+#bankModal .bank-modal__text_tel {
+  text-align: center;
+  font-family: Avenir;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+#bankModal .bank-modal__text_small {
+  text-align: center;
+  font-size: 9px;
+  line-height: 12px;
+}
+
+#bankModal .bank-modal__text:nth-of-type(6) {
+  margin-top: 0;
+  text-align: center;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.text_blue {
+  color: #759ac4;
+}
+
+.text_small {
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 400;
+  letter-spacing: -0.08px;
 }
 
 .checkbox {
@@ -9883,6 +9923,10 @@ header {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.22px;
+}
+
+.value__info_click {
+  cursor: pointer;
 }
 
 .request__steps {

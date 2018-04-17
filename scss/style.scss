@@ -56,22 +56,6 @@ ul {
     // letter-spacing: -0.19px;
   }
 }
-.text {
-  &_bold {
-    font-weight: 700;
-  }
-  &_blue {
-    color: #759ac4;
-  }
-  &_small {
-    margin-top: 24px;
-    color: #ffffff;
-    font-size: 11px;
-    line-height: 15px;
-    font-weight: 400;
-    letter-spacing: -0.08px;
-  }
-}
 .button {
   display: block;
   margin: 0 auto;
@@ -343,6 +327,58 @@ ul {
   padding-right: 15px;
   margin-bottom: 10px;
 }
+#bankModal {
+  .bank-modal {
+    max-width: 700px;
+    &__logo {
+      width: 238px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    &__body {
+      padding: 25px 80px 35px;
+      color: #757575;
+    }
+    &__text {
+      margin-top: 20px;
+      &_tel {
+        text-align: center;
+        font-family: Avenir;
+        font-size: 30px;
+        line-height: 30px;
+      }
+      &_small {
+        text-align: center;
+        font-size: 9px;
+        line-height: 12px;
+      }
+      &:nth-of-type(6) {
+        margin-top: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+// ==================================================================
+.text {
+  &_bold {
+    font-weight: 700;
+  }
+  &_blue {
+    color: #759ac4;
+  }
+  &_small {
+    margin-top: 24px;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: -0.08px;
+  }
+}
+
 //Checkboxes==========================================================
 .checkbox {
   position: relative;
@@ -1482,6 +1518,9 @@ header {
     font-weight: 400;
     line-height: 25px;
     letter-spacing: -0.22px;
+    &_click {
+      cursor: pointer;
+    }
   }
 }
 
