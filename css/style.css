@@ -8158,7 +8158,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'Avenir';
+  font-weight: 400;
   src: url("../fonts/Avenir Next.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 700;
+  src: url("../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
 }
 
 * {
@@ -8411,6 +8418,7 @@ ul {
 #confirmModal .modal__info .phone {
   color: #b7c6d7;
   font-family: Avenir;
+  font-weight: 400;
   font-size: 50px;
   line-height: 55px;
   text-align: center;
@@ -8537,12 +8545,30 @@ ul {
 }
 
 #bankModal .bank-modal {
-  max-width: 700px;
+  max-width: 710px;
+  font-weight: 400;
+  letter-spacing: 1.22px;
+}
+
+#bankModal .bank-modal__header {
+  height: 73px;
+}
+
+#bankModal .bank-modal__header img {
+  top: 18px;
+  left: 110px;
+}
+
+#bankModal .bank-modal__title {
+  font-size: 24px;
+  line-height: 73px;
+  font-weight: 700;
 }
 
 #bankModal .bank-modal__logo {
   width: 238px;
   margin: 0 auto;
+  margin-bottom: 49px;
 }
 
 #bankModal .bank-modal__logo img {
@@ -8550,30 +8576,47 @@ ul {
 }
 
 #bankModal .bank-modal__body {
-  padding: 25px 80px 35px;
-  color: #757575;
+  padding: 41px 100px 25px 110px;
+  color: #959494;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 #bankModal .bank-modal__text {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #bankModal .bank-modal__text_tel {
   text-align: center;
   font-family: Avenir;
+  font-weight: 700;
   font-size: 30px;
   line-height: 30px;
+  letter-spacing: 0px;
 }
 
 #bankModal .bank-modal__text_small {
   text-align: center;
   font-size: 9px;
   line-height: 12px;
+  opacity: 0.7;
+}
+
+#bankModal .bank-modal__text:nth-of-type(2) {
+  margin-top: 31px;
+}
+
+#bankModal .bank-modal__text:nth-of-type(5) {
+  margin-top: 45px;
 }
 
 #bankModal .bank-modal__text:nth-of-type(6) {
-  margin-top: 0;
+  margin-top: 5px;
   text-align: center;
+}
+
+#bankModal .bank-modal__text:nth-of-type(7) {
+  margin-top: 40px;
 }
 
 .text_bold {
@@ -10568,6 +10611,7 @@ footer {
 .contacts__tel {
   color: #fff;
   font-family: Avenir;
+  font-weight: 400;
   text-align: center;
 }
 
