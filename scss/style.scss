@@ -369,6 +369,7 @@ ul {
         font-size: 30px;
         line-height: 30px;
         letter-spacing: 0px;
+        cursor: pointer;
       }
       &_small {
         text-align: center;
@@ -452,8 +453,12 @@ ul {
 // header=======================================================
 header {
   height: 53px;
+  width: 100%;
   background-color: #494949;
   color: #ffffff;
+  position: fixed;
+  z-index: 99;
+  top: 0px;
   @include media-breakpoint-down(sm) {
     .container {
       max-width: 100%;
@@ -777,7 +782,7 @@ header {
     margin-top: 0;
     margin-right: 16%;
     margin-left: 17%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #757575;
     font-size: 18px;
     font-weight: 400;
@@ -821,6 +826,7 @@ header {
   &__slider {
     display: none;
     overflow: hidden;
+    margin-top: 15px;
     &_active {
       display: block;
     }
@@ -970,6 +976,9 @@ header {
   &__scheme {
     display: inline;
     padding: 0 25px;
+    img {
+      cursor: pointer;
+    }
   }
 }
 
