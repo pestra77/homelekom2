@@ -50,6 +50,7 @@ var regions = [
   },
 ];
 var prettyNumber = function(value) {
+  if (isNaN(value)) return 0;
   return String(value).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ')
 }
 var complectationType = function () {
