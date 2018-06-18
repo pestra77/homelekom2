@@ -146,12 +146,12 @@ $(function(){
     };
     console.log(data);
     if (data.name.trim() && data.phone.trim()) {
+      $('#exampleModal').modal('hide');
       $.ajax({
           type: "POST",
           url: "http://homelekom.ru/mailer.php",
           data: data,
           success: function(){
-            $('#exampleModal').modal('hide');
             $('#confirmModal').modal('show');
           }
       });

@@ -56,7 +56,10 @@ var prettyNumber = function(value) {
 var complectationType = function () {
   return $('input[name=complectation-type-radio]:checked').val();
 };
-window.onload = function () {
+// window.onload = function () {
+//
+// }
+ymaps.ready(function () {
   $('#loader').fadeTo( 500, 0 );
   $('#loader').hide();
   for (var i = 0; i < regions.length; i++) {
@@ -66,6 +69,7 @@ window.onload = function () {
 
   var location = ymaps.geolocation;
   var city;
+  console.log(location.city)
   for (var i = 0; i < regions.length; i++) {
     if (regions[i].center == location.city) {
       city = regions[i].id;
@@ -78,6 +82,10 @@ window.onload = function () {
       $('#cityRefinement').modal('show' );
       break;
     } else {
+      $('.navigation__city_right').text(regions[0].center);
+      $(".navigation__city_right").attr('active_region', regions[0].id);
+      $('#price').text(prettyNumber(regions[0][complectationType()]));
+      $('#total').text(prettyNumber(regions[0][complectationType()] * 115));
       $('#modal-city-name-refine').text(regions[0].center);
       $('#modal-city-name-refine').attr('region_id', regions[0].id);
       $('#cityRefinement').modal('show' );
@@ -185,4 +193,4 @@ window.onload = function () {
       $('p#8').removeClass('disabled');
     }
   })
-}
+});
