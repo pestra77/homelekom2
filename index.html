@@ -180,6 +180,49 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="valueModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-feedback" role="document">
+        <div class="modal-content">
+          <form id="feedbackForm" class="" >
+          <!-- <form id="feedbackForm" class="" name="feedbackForm" action="http://homelekom.ru/send.php" method="post"> -->
+            <div class="modal-header">
+              <div class="modal-logo">
+                <img src="./img/logos/small/hl.png" alt="">
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">Мы рады Вам позвонить</h5>
+            </div>
+            <div class="modal__info">
+              Рассчитаем стоимость Вашего нового дома за 5 минут!
+            </div>
+            <div class="modal-body">
+              <p></p>
+              <div class="modal__input">
+                <input id="userNameP" type="text" placeholder="ваше имя" name="name" value="">
+              </div>
+              <div class="modal__input">
+                <input id="userPhoneP" type="text" placeholder="телефон" name="phone" value="">
+              </div>
+              <div class="modal__input">
+                <input  id="userTime" type="text" placeholder="удобное для звонка время" name="time" value="">
+              </div>
+              <div class="modal__info">
+                <p>
+                  <!-- <i class="far fa-check-circle"></i> -->
+                  Оставьте,
+                    пожалуйста, Ваши контактные данные и наш специалист перезвонит
+                    Вам в течение 5 минут или в удобное для Вас время
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="send-price" type="button" class="button">
+                Отправить заявку
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
 
       <header>
@@ -929,7 +972,7 @@
           <h2 class="value__title title title_grey">
             Стоимость дома
           </h2>
-          <div class="container">
+          <!-- <div class="container">
             <div class="value__calculation row">
               <div class="value__price col-12 col-sm-6">
                 <p><span id="price">0</span> руб / м<sup>2</sup></p>
@@ -938,6 +981,11 @@
                 <p class="value__total_top">Model С</p>
                 <p class="value__total_bottom"><span id="total" val="4690000">0</span> руб</p>
               </div>
+            </div> -->
+            <div class="value__button">
+              <button type="button" class="button" data-toggle="modal" data-target="#valueModal">
+                Рассчитать стоимость
+              </button>
             </div>
             <p class="value__info">
               Данный дом вы можете купить в ипотеку от <span class="text_bold value__info_click">Сбербанка</span>.

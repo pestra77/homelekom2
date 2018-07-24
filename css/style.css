@@ -8660,6 +8660,19 @@ ul {
   margin-top: 40px;
 }
 
+#valueModal .modal__info {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 20px;
+  color: #c9c7c7;
+  margin-top: 20px;
+}
+
+#valueModal .modal-body {
+  padding-top: 10px;
+}
+
 .text_bold {
   font-weight: 700;
 }
@@ -10006,6 +10019,11 @@ header {
 
 .value__total_bottom span {
   font-weight: 700;
+}
+
+.value__button {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .value__info {

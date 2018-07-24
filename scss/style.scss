@@ -431,6 +431,19 @@ ul {
     }
   }
 }
+#valueModal {
+  .modal__info {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    color: #c9c7c7;
+    margin-top: 20px;
+  }
+  .modal-body {
+    padding-top: 10px;
+  }
+}
 // ==================================================================
 .text {
   &_bold {
@@ -1587,6 +1600,10 @@ header {
         font-weight: 700;
       }
     }
+  }
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   &__info {
     margin-bottom: 20px;

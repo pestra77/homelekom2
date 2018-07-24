@@ -161,6 +161,29 @@ $(function(){
     }
   });
 
+  $('#send-price').on('click', function() {
+    var data = {
+        name: $("#userNameP").val(),
+        phone: $("#userPhoneP").val(),
+        time: $("#userTime").val(),
+        city: $(".navigation__city_right").text()
+    };
+    if (data.name.trim() && data.phone.trim()) {
+      $('#valueModal').modal('hide');
+      $.ajax({
+          type: "POST",
+          url: "http://homelekom.ru/mailer-price.php",
+          data: data,
+          success: function(){
+            $('#confirmModal').modal('show');
+          }
+      });
+    } else {
+      $("#userNameP").addClass('error');
+      $("#userPhoneP").addClass('error');
+    }
+  });
+
   $('#preview-1').on('click', function(ev) {
     $("#video-1")[0].src += "&autoplay=1";
     $('#preview-1').addClass('hidden');
